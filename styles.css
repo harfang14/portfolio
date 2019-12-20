@@ -1,0 +1,129 @@
+body {
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    font-family:'Inria Serif', serif;
+    height: 3000px;
+  }
+   
+  #menu-nav {
+    display: flex;
+    z-index: 1; 
+    position: fixed; 
+    top: 0;
+    height: 100px; 
+    width: 100%; 
+    background-color: rgba(0, 0, 0, 0.5);
+    
+  }
+  #navigation-left
+  {
+      flex: 1;
+  }
+      
+  #navigation-bar {
+      flex: 1;
+     /* background: red;*/
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  #navigation-bar li {
+    float: left;
+    width: 20%;
+  }
+  #navigation-bar li:hover a::before {
+    right: 0;
+    left: 0;
+  }
+  #navigation-bar a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px 0;
+    display: block;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  #navigation-bar a:hover {
+    color: #bbff9c;
+  }
+  #navigation-bar a::before {
+    content: "";
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    bottom: 0;
+    height: 2px;
+    background-color: #42c2c7;
+  }
+  #navigation-bar a:hover::before {
+    right: 0;
+    left: 0;
+  }
+   
+  li {
+      list-style: none;
+  }
+
+  .bio {
+      font-family: 'Inria Serif', serif;
+      width: 100%;
+      padding-top: 100px;
+      background-color:rgb(255, 255, 255,0.7);
+      text-align: center;
+  }
+  .bio>h1 { text-align: center;
+  
+  }
+
+  .icon >a {
+    font-size: 48px;
+    text-decoration: none;color: white;
+
+  }
+
+  .img_fd {
+    position: relative; 
+    height: 400px;
+    background-image: url('41.png'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+
+  .describe {
+    position: absolute;
+    color:#ffffff ; 
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center; 
+  }
+ 
+  .img_id {
+    display: flex;
+  }
+
+  .describe_me {
+    background-color: black;
+    display: block;
+    color: cornsilk;
+    text-align: center;
+    position: relative;
+
+  }
+
+  .txt_describe {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+  }
+
+.competence {
+  background-color: red;
+  height: 400px;
+  width: 100%;
+}
