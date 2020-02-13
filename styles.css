@@ -342,17 +342,81 @@ color: #42c2c7;
   margin-top: 10%;
   color: aliceblue;
   text-align: center;
+  display: flex;
+  position: relative;
+  /*background-color: chartreuse;*/
 
 }
 
-.exp h1 {
+.exp_titre { 
+  text-align: center;
+  color: #42c2c7;
+  margin-top: 10%;
+}
 
+.exp img {
+
+  max-width: 100%;
+  height: 300px;
+  margin-left: 4%;
+ /* background-color: chocolate;*/
+  margin-top: 5%;
+  margin-right: 4%;
+
+  
+
+}
+.exp_texte {
+flex: 1;
+/* background-color: #42c2c7;*/
+top: 50%;
 
 }
 
-.exp p {
+.exp_enfant_texte {
+position: absolute;
+margin-left: 20%;
+top: 50%;
+transform: translateY(-50%);
+}
 
- 
+/*******THP*********/
+
+.THP {
+	/*max-width: 50%;
+	height: auto;*/
+  height: 500px;
+  width: 100%;
+  margin-top: 10%;
+  color: aliceblue;
+  text-align: center;
+  display: flex;
+  position: relative;/*
+  margin-left: 51%;
+  
+  position: relative;*/
+  /*background-color: blueviolet;*/
+}
+.THP img {
+/*  background-color: aquamarine;*/
+  margin-right: 50%;
+  max-width: 100%;
+  height: 300px;
+  margin-left: 2%;
+  margin-top: 5%;
+
+}
+.thp_texte {
+/*  background-color: chocolate;*/
+  position: absolute;
+  margin-left: 42%;
+  top: 50%;
+  transform: translateY(-50%)
+  
+}
+
+.thp_enfant_texte {
+
 }
 
 /******************RECOMMANDATAION*****************/
@@ -361,6 +425,7 @@ color: #42c2c7;
     .recommandation{
       width: 80%;
       margin: auto;
+      margin-top: 15%;
       /*
       background: white;
       display: flex;
@@ -394,7 +459,7 @@ form {
   padding: 1em;
   border: 1px solid #CCC;
   border-radius: 1em;
-  background-color: rgb(160, 160, 160);
+ /* background-color: rgb(160, 160, 160);*/
 }
 
 form div + div {
