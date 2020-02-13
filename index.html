@@ -2,87 +2,150 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+
     <title>Rauana Roupsard - Portfolio></title>
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300">
     <link href="https://fonts.googleapis.com/css?family=Inria+Serif&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+
 </head>
  
 <body>
- 
+   <p id="accueil"></p>
     <div style="height: 100px; width: 100%;"></div>
     <nav id="menu-nav">
-      <div id="navigation-left">
-       <img src="logo.png" style="height:100px;">
+      <div id="logo" >
+       <a href="#accueil"> <img src="logo.png" style="height:100px;"></a> 
       </div>
 
-        <ul id="navigation-bar">
-        <li><a href="#"><i class="fa fa-home"></i><span></span></a></li>
-        <li><a href="#"><i class="fa fa-user"></i><span></span></a></li>
-        <li><a href="#"><i class="fa fa-book"></i><span></span></a></li>
-        <li><a href="#"><i class="fa fa-rss"></i> <span></span></a></li>
-        <li><a href="#"><i class="fa fa-handshake"></i><span></span></a></li>
+        <ul id="icon-right">
+            <li><a href="#a_propos"><i class="fa fa-user"></i><span> À PROPOS </span></a></li>
+            <li><a href="#competences"><i class="fa fa-book"></i><span>COMPÉTENCES</span></a></li>
+            <li><a href="#experiences"><i class="fa fa-rss"></i><span> EXPÉRIENCES</span></a></li>
+            <li><a href="#recommandation"><i class="fa fa-handshake"></i> <span> RECOMMANDATION</span></a></li>
+            <li><a href="#contact"><i class="fas fa-mail-bulk"></i><span> CONTACT </span></a></li>
+            
         </ul>
     </nav>
     </div>  
-
+       
         <div class="img_fd">
+            <div style="background-color: rgb(38,43,55,0.4); position: absolute; width: 100%; height: 100%;z-index: -1;"></div>
             <div class="describe">
-                <center>
-                <h1>Rauana Roupsard</h1>
-                <p>Developpeur Web</p>
-
-                <div class="icon" >
-                    <a href="#git" class="fa fa-github" ></a>
-                    <a href="linkedin" class="fa fa-linkedin-square"></a> 
-                    <a href="twitter" class="fa fa-twitter"></a>
-                 </center>
-                </div>   
-        
+             
+                <h1> <strong>RAUANA ROUPSARD</strong></h1>
+                <p><strong> Développeur Web</strong> </p>
+ 
             </div>  
-        </div>
-
-     <div class="img_id">
-        <img src="photo.jpg" width="350" height="350" style="margin: 10px;border-radius: 20px;">
-     
-     
+                <div class="icon">
+                    <a href="https://github.com/harfang14?tab=repositories" class="fa fa-github" ></a>
+                    <a href="https://www.linkedin.com/in/rauana-roupsard/" class="fa fa-linkedin-square"></a> 
+                    <a href="https://twitter.com/Rauana987" class="fa fa-twitter"></a>
+                </div>   
+                 <p id="a_propos"></p>
+        </div>  
+          
+    <div class="img_id">
+        <img src="photo.jpg"width="350" height="350" style="margin-top :6%; border-radius: 300px; margin-left: 2%;">
+ 
         <div class="describe_me">
             <div class="txt_describe">
-            <p> Lorem ipsum dolor sit colamet consectetur</p>
-            <p>Lorem ipsum dolor sit colamet consectetur adipisicing elit. Est sapiente architecto nesciunt exercitationem quidem alias odio, voluptatibus hic amet libero consequatur aspernatur repellat esse modi aut. Ea quos molestiae itaque.</p>
-            </div>
 
+            <h2>À PROPOS DE MOI </h2>
+        
+            <h3>Rauana Roupsard, 30 ans  <h3>
+
+            <p>En reconversion professionnelle j'ai choisi l’informatique afin de m’épanouir dans un secteur qui m'a toujours plu.<br><br> Passionnée par le numérique ainsi que le digital et la robotique, 
+                je porte un grand intérêt à la technologie.
+                Mon parcours quelque peu atypique m'a fait découvrir de nombreux métiers.
+                Autodidacte j'ai pu approfondir mes connaissances en informatique grâce à ma première année au sein de Campus Academy et ainsi confirmer mon désir d’en faire mon futur métier.
+                <br>Originaire de Tahiti, je suis depuis quelques années en France afin de profiter de l’enseignement que dispose la Métropole pour atteindre mon objectif. 
+                
+            </p>
+            </div>
+ 
         </div>
     </div>
+    <div class="cv">
+        <a button type="button" class="btn btn-outline-secondary" href="cv_rouspsard.pdf" download="cv_roupsard.pdf">Télécharger mon CV</button></a>
+    </div>
+       <p id="competences"></p>
+    <div class="bloc_skill"> 
+    
+        <h1>MES COMPÉTENCES</h1>
+    
+        <div class="bloc_icon_skill">
 
-        <div class="skill">
-            <h1>Compétences</h1>
-            <div class="icon_skill">
-            <i class="fa fa-globe" style="font-size:36px"></i>
-            <i class="fa fa-code-fork" style="font-size:36px"></i>
-            <i class="fa fa-heart" style="font-size:36px;"></i>
-            </div><!--
-            <div class="ex_skill">
-                <p>Lorem ipsum dolor sit amet consectetur</p>
-                <p>Lorem ipsum dolor sit amet consectetur</p>
-                <p>Lorem ipsum dolor sit amet consectetur</p>
-            </div>-->
-
-            
-            
+            <div class="skill1">
+                <P><i class="fab fa-html5" style="font-size:60px ;color: #42c2c7;"></i> </p>
+                <p> HTML 5</p>
+            </div>
+    
+            <div class="skill2">
+                <p> <i class="fab fa-css3-alt" style="font-size:60px ;color: #42c2c7;"></i></p>
+                <p style="margin-right: 1%;">CSS 3</p>
+            </div>
+    
+            <div class="skill3">
+                <p><i class="fas fa-feather-alt" style="font-size:60px;color: #42c2c7;"></i></p>
+                <p style="margin-right: 5%;">Apache</p>
+            </div>
+        </div>
+    </div>
+          
+        <div class="bloc_skill2"> 
+    
+        
+            <div class="bloc_icon_skill2">
+    
+                <div class="skill4">
+                    <P><i class="fab fa-linux" style="font-size:60px ;color: #42c2c7;"></i> </p>
+                    <p> LINUX </p>
+                </div>
+        
+                <div class="skill5">
+                    <p> <i class="fab fa-java" style="font-size:60px ;color: #42c2c7;"></i></p>
+                    <p style="margin-right: 1%;">JAVASCRIPT</p>
+                </div>
+        
+                <div class="skill6">
+                    <p><i class="fab fa-php" style="font-size:60px;color: #42c2c7;"></i></p>
+                    <p>PHP</p>
+                </div>
+            </div>
         </div>
 
-    <div class="recommandation">
-        <h1>Recommandation Professionnelles</h1>
 
-    <p>Lorem ipsum dolor sit amet consectetur </p>
-    <p>Lorem ipsum dolor sit amet consectetur </p>
-    <p>Lorem ipsum dolor sit amet consectetur </p>
-    <p>Lorem ipsum dolor sit amet consectetur </p>
+    <div class="exp">
+        <p id="experiences"></p>
+
+        <h1>EXPÉRIENCES</h1>
+
+            <p>Lorem ipsum dolor sit amet consectetur </p>
+            <p>Lorem ipsum dolor sit amet consectetur </p>
+            <p>Lorem ipsum dolor sit amet consectetur </p>
+            <p>Lorem ipsum dolor sit amet consectetur </p>
         
     </div>
+
+    <div class="recommandation" >
+    
+        <h2> RECOMMANDATIONS PROFESSIONNELLES </h2>
+    
+    </div>
+  
+
+    <div class="contact">
+    
+        <h1>CONTACTEZ MOI</h1> 
+
+    </div>
+
+ <p id="contact"></p>
  
     <form action="/ma-page-de-traitement" method="post">
         <div>
@@ -98,11 +161,7 @@
             <textarea id="msg" name="user_message"></textarea>
         </div>
     </form>
-    
-    
-
-   
-            
+              
 </body>
  
 </html>

@@ -1,41 +1,41 @@
 body {
-    background-color: rgb(0, 0, 0);
-    margin: 0;
-    padding: 0;
+    background-color: #262b37;
+    height: 150px;
     font-family:'Inria Serif', serif;
     height: 3000px;
   }
-   
+   /* PARTIE HEADER AVEC LA NAVBAR ET SES FONCTIONNALITÉS*/
+
   #menu-nav {
     display: flex;
     z-index: 1; 
     position: fixed; 
     top: 0;
-    height: 100px; 
+    height: 100px; /*navbar plus large*/
     width: 100%; 
-    background-color: rgba(0, 0, 0, 0.5);
-    
+    background-color: #262b37;
+ 
   }
-  #navigation-left
+
+  #logo
   {
-      flex: 1;
+      flex: ;
+      margin-left: 20px;
   }
-      
-  #navigation-bar {
-      flex: 1;
-     /* background: red;*/
+      /****PERSONNALISATION DES ICÔNES DROITE*******/
+
+  #icon-right {
+    flex: 1;
     border-radius: 4px;
     overflow: hidden;
   }
-  #navigation-bar li {
+
+  #icon-right li {
     float: left;
     width: 20%;
   }
-  #navigation-bar li:hover a::before {
-    right: 0;
-    left: 0;
-  }
-  #navigation-bar a {
+
+  #icon-right a {
     color: white;
     font-size: 20px;
     text-decoration: none;
@@ -45,10 +45,12 @@ body {
     position: relative;
     transition: all 0.3s ease;
   }
-  #navigation-bar a:hover {
+
+  #icon-right a:hover {
     color: #bbff9c;
   }
-  #navigation-bar a::before {
+
+  #icon-right a::before {
     content: "";
     transition: all 0.4s ease-in-out;
     position: absolute;
@@ -58,40 +60,29 @@ body {
     height: 2px;
     background-color: #42c2c7;
   }
-  #navigation-bar a:hover::before {
+
+  #icon-right a:hover::before {
     right: 0;
     left: 0;
   }
-   
-  li {
+
+ li {
       list-style: none;
-  }
+    }
 
-  .bio {
-      font-family: 'Inria Serif', serif;
-      width: 100%;
-      padding-top: 100px;
-      background-color:rgba(0, 0, 0, 0.7);
-      text-align: center;
-  }
-  .bio>h1 { text-align: center;
-  
-  }
-
-  .icon >a {
-    font-size: 48px;
-    text-decoration: none; color:  #42c2c7;
-
-  }
+  /****************IMAGE DE FOND*******************/ 
 
   .img_fd {
     position: relative; 
-    height: 400px;
+    height: 570px; /*image de fond plus grande*/
     background-image: url('41.png'); 
     background-repeat: no-repeat;
     background-size: cover;
-
+    filter:grayscale(30%); /*met un filtre gris sur la photo *****************/
+   
   }
+
+  /***************NOM PRÉNOM ET DEV******************/
 
   .describe {
     position: absolute;
@@ -99,89 +90,302 @@ body {
     top: 50%; left: 50%;
     transform: translate(-50%,-50%);
     text-align: center; 
+    
+
+}
+
+.describe>h1:hover {
+  transform: scale(1.50);
+}
+  
+  .describe h1 {
+    font-size: 50px;
+    color:  #b4f3f5;
+    transform: scale(1);
+    transition-property:transform;
+    transition-duration: 1000ms;
+ 
+    
+  }
+
+  .describe p {
+    font-size: 40px;
+    color: #b0ed93;
+    transform: scale(1);
+    transition-property:transform;
+    transition-duration: 1000ms;
+    position: relative;
+    top: 30px;
+  
+    
   }
  
-  .img_id {
-    display: flex;
+  .describe>p:hover {
+    transform: scale(1.50);
   }
+    
+  /****************ICÔNE RÉSEAU**********************/ 
+
+.icon{
+  text-align: center;
+  padding-top: 17%;
+  margin-left: 6%;
+
+}
+  .icon>a{
+    margin-top: 8%; 
+    font-size: 48px;
+    text-decoration: none; 
+    margin-right: 7%;
+    color:#b4f3f5; 
+  }
+
+  /*********PHOTO DE BELLE GOSSE*******************/ 
+
+  .img_id {
+    display: flex; 
+    margin-top: 5%;
+ 
+  }
+
+  /****DISPOSITION ET PARAMÈTRE DU TEXTE BIO*****/
 
   .describe_me {
-    background-color: rgb(0, 0, 0);
+   
     display: block;
-    color: rgb(255, 255, 255);
+    color: white;
     text-align: center;
     position: relative;
+    height: 550px;
+
 
   }
+
+   /*********CONTENU DU TEXTE BIOGRAPHIQUE*******/ 
 
   .txt_describe {
     position: relative;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%,-50%);
-
+    margin-right: 5%;
+    margin-top: %;
   }
 
-.skill {
-  background-color:rgb(160, 160, 160);
-  height: 500px;
-  width: 100%;
-  display: flex
+  .txt_describe h2 {
+    margin-right: 25%;
+    padding-bottom: 2%;
+    color: white ;
+    
+  
+  }
+  .txt_describe h3 {
+    margin-right: 25%;
+    margin-top: 2%;
 
-}
+  }
+  .txt_describe p {
+  text-align: justify;
+  padding-top: 2%;
+  margin-left: 12%;
+  font-size:22px;
 
-.skill h1 {
-  color: rgb(230, 230, 230);
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+  }
+  
+  /************BOUTON CV*******************/
 
-
-}
-
-.icon_skill { 
-  display: flex;
-  position: relative;
-  text-align: center;
-  width: 100%;
-  top: 50%;
-  color: #ccc;
+  .cv {
+    margin-left: 6%;
+    margin-top: 21;
+    text-decoration: none;
 
    
-}
+  }
 
-.icon_skill i {
-  flex: 1;
-  text-align: center;
-  /*background-color: blue;*/
-}
-/*
-.ex_skill {
-  display: flex;
-  position: relative;
-  text-align: center;
-  width: 100%;
-  top: 50%;
-  color: #ccc;
-  background-color: blue;
-}
-*/
-.ex_skill {
+
+  /******************skill1*******************/
+
+  .bloc_skill {
+    width: 80%;
+    margin: auto;
+    /*margin-top: 100%;*/
+  }
+
+  .bloc_skill h1 {
+    text-align: center;
+    color: white;
+    margin-top: 10%;
+  }
+
+  .bloc_icon_skill {
+    display: flex;
+    margin-top: 10%;
+  }
+  .bloc_icon_skill p {
+    text-align: center;
+   font-size: 20px;
+    color: white;
+  }
+
+  .skill1 {
+   flex: 1;
+  }
+  
+  .skill1 p+p{
+  color: #42c2c7;
+  }
+  .skill2 {
+    flex: 1;
+  }
+
+  .skill2 p+p {
+  color: #42c2c7;;
+  }
+
+.skill3 {
 flex: 1;
-text-align: center;
 }
 
-.recommandation {
-  background-color: rgb(0, 0, 0);
+.skill3 p+p {
+  color: #42c2c7;
+}
+/*********************SKILL2********************/
+
+.bloc_skill2{
+  width: 80%;
+  margin: auto;
+  /*margin-top: 100%;*/ 
+ 
+}
+
+.bloc_icon_skill2 {
+  display: flex;
+  margin-top: 10%;
+  
+  }
+
+  .bloc_skill h1 {
+    text-align: center;
+    color: white;
+    margin-top: 10%;
+  }
+
+  .bloc_icon_skill {
+    display: flex;
+    margin-top: 10%;
+  }
+  .bloc_icon_skill p {
+    text-align: center;
+   font-size: 20px;
+    color: white;
+  }
+
+  .skill1 {
+   flex: 1;
+  }
+  
+  .skill1 p+p{
+  color: #42c2c7;
+  }
+  .skill2 {
+    flex: 1;
+  }
+
+  .skill2 p+p {
+  color: #42c2c7;;
+  }
+
+.skill3 {
+flex: 1;
+
+}
+
+.skill3 p+p {
+  color: #42c2c7;
+}
+ 
+.bloc_icon_skill2 p {
+  text-align: center;
+ font-size: 20px;
+ color: white;
+
+}
+
+.skill4 {
+ flex: 1;
+}
+
+.skill4 p+p{
+color: #42c2c7;
+}
+.skill5 {
+  flex: 1;
+}
+
+.skill5 p+p {
+color: #42c2c7;;
+}
+
+.skill6 {
+flex: 1;
+}
+
+.skill6 p+p {
+color: #42c2c7;
+}
+/******************EXPÉRIENCES*****************/ 
+
+.exp {
+
   height: 500px;
   width: 100%;
+  margin-top: 10%;
+  color: aliceblue;
+  text-align: center;
 
 }
 
-.recommandation {
-  color: aliceblue;
+.exp h1 {
+
+
+}
+
+.exp p {
+
+ 
+}
+
+/******************RECOMMANDATAION*****************/
+
+    /*Div pour mon premier carousel*/
+    .recommandation{
+      width: 80%;
+      margin: auto;
+      /*
+      background: white;
+      display: flex;
+      height: 450px;*/
+  }
+  .recommandation h2 {
+    text-align: center;
+    color: white;
+  
+  }
+    /*pour recentrer  carousel
+  .carousel-caption{
+      margin-left: 45%;
+      margin-bottom: 5%;
+  }*/
+
+/****************CONTACT***************************/
+
+.contact {
   text-align: center;
+  color:white;
+}
+
+.contact h1 {
+  margin-top: 10%;
 }
 
 form {
