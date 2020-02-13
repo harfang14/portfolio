@@ -358,7 +358,7 @@ color: #42c2c7;
 
   max-width: 100%;
   height: 300px;
-  margin-left: 4%;
+  margin-left: 15%;
  /* background-color: chocolate;*/
   margin-top: 5%;
   margin-right: 4%;
@@ -402,14 +402,14 @@ transform: translateY(-50%);
   margin-right: 50%;
   max-width: 100%;
   height: 300px;
-  margin-left: 2%;
+  margin-left: 15%;
   margin-top: 5%;
 
 }
 .thp_texte {
 /*  background-color: chocolate;*/
   position: absolute;
-  margin-left: 42%;
+  margin-left: 54%;
   top: 50%;
   transform: translateY(-50%)
   
