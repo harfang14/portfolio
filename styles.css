@@ -1,10 +1,10 @@
-body {
+  body {
     background-color: #262b37;
-    height: 150px;
     font-family:'Inria Serif', serif;
     height: 3000px;
   }
-   /* PARTIE HEADER AVEC LA NAVBAR ET SES FONCTIONNALITÉS*/
+
+/* PARTIE HEADER AVEC LA NAVBAR ET SES FONCTIONNALITÉS*/
 
   #menu-nav {
     display: flex;
@@ -14,15 +14,14 @@ body {
     height: 100px; /*navbar plus large*/
     width: 100%; 
     background-color: #262b37;
- 
   }
 
-  #logo
-  {
-      flex: ;
-      margin-left: 20px;
+  #logo {
+    flex: ;
+    margin-left: 20px;
   }
-      /****PERSONNALISATION DES ICÔNES DROITE*******/
+
+/****PERSONNALISATION DES ICÔNES DROITE*******/
 
   #icon-right {
     flex: 1;
@@ -66,11 +65,9 @@ body {
     left: 0;
   }
 
- li {
-      list-style: none;
-    }
-
-  /****************IMAGE DE FOND*******************/ 
+  li { list-style: none;  }
+    
+/****************IMAGE DE FOND*******************/ 
 
   .img_fd {
     position: relative; 
@@ -78,11 +75,10 @@ body {
     background-image: url('41.png'); 
     background-repeat: no-repeat;
     background-size: cover;
-    filter:grayscale(30%); /*met un filtre gris sur la photo *****************/
-   
+    filter:grayscale(30%); /*met un filtre gris sur la photo */
   }
 
-  /***************NOM PRÉNOM ET DEV******************/
+/***************NOM PRÉNOM ET DEV******************/
 
   .describe {
     position: absolute;
@@ -90,22 +86,16 @@ body {
     top: 50%; left: 50%;
     transform: translate(-50%,-50%);
     text-align: center; 
-    
+  }
 
-}
+  .describe>h1:hover {transform: scale(1.50);}
 
-.describe>h1:hover {
-  transform: scale(1.50);
-}
-  
   .describe h1 {
     font-size: 50px;
     color:  #b4f3f5;
     transform: scale(1);
     transition-property:transform;
-    transition-duration: 1000ms;
- 
-    
+    transition-duration: 1000ms; 
   }
 
   .describe p {
@@ -116,22 +106,17 @@ body {
     transition-duration: 1000ms;
     position: relative;
     top: 30px;
-  
-    
   }
  
-  .describe>p:hover {
-    transform: scale(1.50);
+  .describe>p:hover { transform: scale(1.50); }
+
+/****************ICÔNE RÉSEAU**********************/ 
+
+  .icon{
+    text-align: center;
+    padding-top: 17%;
+    margin-left: 6%;
   }
-    
-  /****************ICÔNE RÉSEAU**********************/ 
-
-.icon{
-  text-align: center;
-  padding-top: 17%;
-  margin-left: 6%;
-
-}
   .icon>a{
     margin-top: 8%; 
     font-size: 48px;
@@ -140,7 +125,7 @@ body {
     color:#b4f3f5; 
   }
 
-  /*********PHOTO DE BELLE GOSSE*******************/ 
+/*********PHOTO DE BELLE GOSSE*******************/ 
 
   .img_id {
     display: flex; 
@@ -148,7 +133,7 @@ body {
  
   }
 
-  /****DISPOSITION ET PARAMÈTRE DU TEXTE BIO*****/
+/****DISPOSITION ET PARAMÈTRE DU TEXTE BIO*****/
 
   .describe_me {
    
@@ -157,11 +142,9 @@ body {
     text-align: center;
     position: relative;
     height: 550px;
-
-
   }
 
-   /*********CONTENU DU TEXTE BIOGRAPHIQUE*******/ 
+/*********CONTENU DU TEXTE BIOGRAPHIQUE*******/ 
 
   .txt_describe {
     position: relative;
@@ -176,50 +159,43 @@ body {
     margin-right: 25%;
     padding-bottom: 2%;
     color: white ;
-    
-  
   }
+
   .txt_describe h3 {
     margin-right: 25%;
     margin-top: 2%;
-
   }
   .txt_describe p {
   text-align: justify;
   padding-top: 2%;
   margin-left: 12%;
   font-size:22px;
-
   }
   
-  /************BOUTON CV*******************/
+/************BOUTON CV*******************/
 
   .cv {
-    margin-left: 6%;
+    margin-left: 7%;
     margin-top: 21;
     text-decoration: none;
-
-   
   }
 
-
-  /******************skill1*******************/
+/******************skill1*******************/
 
   .bloc_skill {
     width: 80%;
     margin: auto;
-    /*margin-top: 100%;*/
+    margin-top: 10%;
   }
 
   .bloc_skill h1 {
     text-align: center;
     color: white;
-    margin-top: 10%;
   }
 
   .bloc_icon_skill {
     display: flex;
-    margin-top: 10%;
+    margin-top: 20%;
   }
   .bloc_icon_skill p {
     text-align: center;
@@ -227,41 +203,28 @@ body {
     color: white;
   }
 
-  .skill1 {
-   flex: 1;
-  }
+  .skill1 {  flex: 1; }
+ 
+  .skill1 p+p{ color: #42c2c7; }
+ 
+  .skill2 { flex: 1; }
+   
+  .skill2 p+p {color: #42c2c7;}
   
-  .skill1 p+p{
-  color: #42c2c7;
-  }
-  .skill2 {
-    flex: 1;
-  }
+  .skill3 {flex: 1;}
 
-  .skill2 p+p {
-  color: #42c2c7;;
-  }
-
-.skill3 {
-flex: 1;
-}
-
-.skill3 p+p {
-  color: #42c2c7;
-}
+  .skill3 p+p { color: #42c2c7;}
+ 
 /*********************SKILL2********************/
 
-.bloc_skill2{
-  width: 80%;
-  margin: auto;
-  /*margin-top: 100%;*/ 
- 
-}
+  .bloc_skill2{
+    width: 80%;
+    margin: auto;
+  }
 
-.bloc_icon_skill2 {
-  display: flex;
-  margin-top: 10%;
-  
+  .bloc_icon_skill2 {
+    display: flex;
+    margin-top: 10%;
   }
 
   .bloc_skill h1 {
@@ -276,67 +239,44 @@ flex: 1;
   }
   .bloc_icon_skill p {
     text-align: center;
-   font-size: 20px;
+    font-size: 20px;
     color: white;
   }
 
-  .skill1 {
-   flex: 1;
-  }
-  
-  .skill1 p+p{
-  color: #42c2c7;
-  }
-  .skill2 {
-    flex: 1;
-  }
+  .skill1 {flex: 1;}
 
-  .skill2 p+p {
-  color: #42c2c7;;
-  }
+  .skill1 p+p{color: #42c2c7;}
 
-.skill3 {
-flex: 1;
+  .skill2 {flex: 1;}
+    
+  .skill2 p+p {color: #42c2c7;}
 
-}
+  .skill3 {flex: 1;}
 
-.skill3 p+p {
-  color: #42c2c7;
-}
+  .skill3 p+p {color: #42c2c7;}
+
  
-.bloc_icon_skill2 p {
-  text-align: center;
- font-size: 20px;
- color: white;
+  .bloc_icon_skill2 p {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+  }
 
-}
+  .skill4 { flex: 1;}
 
-.skill4 {
- flex: 1;
-}
+  .skill4 p+p{color: #42c2c7;}
 
-.skill4 p+p{
-color: #42c2c7;
-}
-.skill5 {
-  flex: 1;
-}
+  .skill5 {flex: 1;}
 
-.skill5 p+p {
-color: #42c2c7;;
-}
+  .skill5 p+p {color: #42c2c7;}
 
-.skill6 {
-flex: 1;
-}
+  .skill6 {flex: 1;}
 
-.skill6 p+p {
-color: #42c2c7;
-}
+  .skill6 p+p {color: #42c2c7;}
+
 /******************EXPÉRIENCES*****************/ 
 
-.exp {
-
+.academy {
   height: 500px;
   width: 100%;
   margin-top: 10%;
@@ -344,132 +284,149 @@ color: #42c2c7;
   text-align: center;
   display: flex;
   position: relative;
-  /*background-color: chartreuse;*/
-
 }
 
-.exp_titre { 
+.academy_titre { 
   text-align: center;
-  color: #42c2c7;
-  margin-top: 10%;
+  color:white;
+  margin-top: 15%;
 }
 
-.exp img {
-
+.academy img {
   max-width: 100%;
   height: 300px;
   margin-left: 15%;
- /* background-color: chocolate;*/
   margin-top: 5%;
   margin-right: 4%;
-
-  
-
 }
-.exp_texte {
+
+.academytexte {
 flex: 1;
-/* background-color: #42c2c7;*/
 top: 50%;
-
 }
 
-.exp_enfant_texte {
+.academyenfant_texte {
 position: absolute;
 margin-left: 20%;
 top: 50%;
 transform: translateY(-50%);
 }
 
+
+
 /*******THP*********/
 
 .THP {
-	/*max-width: 50%;
-	height: auto;*/
   height: 500px;
   width: 100%;
   margin-top: 10%;
   color: aliceblue;
   text-align: center;
   display: flex;
-  position: relative;/*
-  margin-left: 51%;
-  
-  position: relative;*/
-  /*background-color: blueviolet;*/
+  position: relative;
 }
 .THP img {
-/*  background-color: aquamarine;*/
   margin-right: 50%;
   max-width: 100%;
   height: 300px;
   margin-left: 15%;
   margin-top: 5%;
-
 }
 .thp_texte {
-/*  background-color: chocolate;*/
   position: absolute;
   margin-left: 54%;
-  top: 50%;
+  top: 59%;
   transform: translateY(-50%)
-  
 }
 
-.thp_enfant_texte {
-
-}
-
-/******************RECOMMANDATAION*****************/
-
-    /*Div pour mon premier carousel*/
-    .recommandation{
-      width: 80%;
-      margin: auto;
-      margin-top: 15%;
-      /*
-      background: white;
-      display: flex;
-      height: 450px;*/
-  }
-  .recommandation h2 {
-    text-align: center;
-    color: white;
-  
-  }
-    /*pour recentrer  carousel
-  .carousel-caption{
-      margin-left: 45%;
-      margin-bottom: 5%;
-  }*/
-
-/****************CONTACT***************************/
-
-.contact {
-  text-align: center;
-  color:white;
-}
-
-.contact h1 {
+/********YOUTUBE***********/
+.test_videos {
+  display: flex;
   margin-top: 10%;
 }
 
+.video_campus {
+   margin-left: 10%;
+   flex: 1;
+
+}.video_thp {
+  flex: 1;
+  margin-left: 10%;
+}
+/*********SITES***********/
+
+.sites {
+  display: flex;
+  margin-top: 2%;
+  text-decoration:none ; color: white;
+  font-size: 1.2em;
+}
+
+.site_campus {
+  flex: 1;
+  margin-left: 17%;
+}
+
+.site_thp{
+  flex: 1;
+  margin-left: 17%;
+
+}
+/******************RECOMMANDATAION*****************/
+
+  .recommandation{
+    width: 80%;
+    margin: auto;
+    margin-top: 15%;   
+  }
+
+  .recommandation h2 {
+    text-align: center;
+    color: white;
+  }
+
+  .reco_texte {
+    margin-top: 10%;
+    text-align: center;
+    color: white;
+  }
+
+  .second_text {
+    margin-top: 10%;
+    text-align: center;
+    color: white;
+  }
+
+.troisième_text {
+  margin-top: 10%;
+  text-align: center;
+  color: white;
+}
+
+/****************CONTACT*************************/
+.contact {
+  text-align: center;
+  color:white; 
+  margin-top: 15%;
+}
+
 form {
-  margin: 0 auto;
+  margin-top: 5%;
   width: 400px;
   padding: 1em;
   border: 1px solid #CCC;
   border-radius: 1em;
- /* background-color: rgb(160, 160, 160);*/
+  margin-left: 40%;
+  bottom: 40;
 }
 
-form div + div {
-  margin-top: 1em;
-}
+form div + div {  margin-top: 1em;}
 
 label {
   display: inline-block;
   width: 90px;
   text-align: right;
+  color: aliceblue;
 }
 
 input, textarea {
@@ -488,8 +445,57 @@ textarea {
 
 .button {
   padding-left: 90px; 
-}
-
-button {
   margin-left: .5em;
 }
+
+.button_send {
+  margin-top: 2%;
+  margin-left: 48%;
+}
+
+
+.text_consentement {
+
+ /* background-color: bisque;*/
+  margin-top: 2%;
+  text-align: center;
+  color: azure;
+}
+
+
+/**************** MEDIA QUERY********************/
+
+/* mode tablet 
+@media only screen and (max-width: 600px) {
+  .back {
+    background-color: lightblue;
+  }
+}*/
+
+/******************FOOTER************************/
+
+.footer{
+  bottom: 0;
+  display: flex; 
+  justify-content: center;
+  padding: 5px;
+  color: #fff;
+  height: 4%;
+  background-color: #617d7e;
+}
+
+.footer p {
+  text-align: center;
+  margin-top: 3%;
+
+}
+
+/*
+.icon2 {
+  margin-top: 8%; 
+    font-size: 48px;
+    text-decoration: none; 
+    margin-right: 7%;
+    color:#b4f3f5; 
+    background-color: cadetblue;
+}*/
