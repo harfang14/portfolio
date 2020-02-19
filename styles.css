@@ -472,8 +472,8 @@ textarea {
 }
 
 .button_send {
-  margin-top: 2%;
-  margin-left: 48%;
+  margin-top:2%;
+  margin-left:48%;
 }
 
 .text_consentement {
@@ -510,6 +510,7 @@ textarea {
   display: flex;
   justify-content: center;
 }
+
 .all a
 {
   font-size: 40px;
@@ -523,6 +524,10 @@ textarea {
   bottom: 10px;
   right: 10px;
   font-size: 30px;
+  color: white;
+  margin-bottom: 8%;
+  color: #bbff9c;
+  
 }
 #copyright
 {
