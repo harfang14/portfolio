@@ -75,14 +75,15 @@
     background-image: url('41.png'); 
     background-repeat: no-repeat;
     background-size: cover;
-    filter:grayscale(30%); /*met un filtre gris sur la photo */
+    filter:grayscale(50%); /*met un filtre gris sur la photo */
+    
   }
 
 /***************NOM PRÉNOM ET DEV******************/
 
   .describe {
     position: absolute;
-    color:#ffffff ; 
+    color:#bbff9c ; 
     top: 50%; left: 50%;
     transform: translate(-50%,-50%);
     text-align: center; 
@@ -92,18 +93,16 @@
 
   .describe h1 {
     font-size: 80px;
-    color:  #ffffff;
+    color:  #fff;
     transform: scale(1);
     transition-property:transform;
     transition-duration: 1000ms; 
     margin-top: 25%;
   }
 
-  
-
   .describe p {
     font-size: 40px;
-    color: #ffffff;
+    color: #42c2c7;
     transform: scale(1);
     transition-property:transform;
     transition-duration: 1000ms;
@@ -163,17 +162,6 @@
     padding-bottom: 2%;
     color: white ;
   }
-
- /* .txt_describe h2:hover {
-    content: "";
-    transition: all 0.4s ease-in-out;
-    position: absolute;
-    right: 50%;
-    left: 50%;
-    bottom: 0;
-    height: 2px;
-    background-color: #42c2c7;
-  }*/
 
   .txt_describe h3 {
     margin-right: 25%;
@@ -434,7 +422,10 @@ transform: translateY(-50%);
   margin-top: 15%;
 }
 
-form {
+.container label {
+  color: #bbff9c;
+}
+  form {
   margin-top: 5%;
   width: 400px;
   padding: 1em;
@@ -476,11 +467,16 @@ textarea {
   margin-left:48%;
 }
 
+.button_send a:hover {
+  background-color: #42c2c7;
+}
+
 .text_consentement {
  /* background-color: bisque;*/
   margin-top: 2%;
   text-align: center;
   color: azure;
+  margin-top: 4%;
 }
 
 
