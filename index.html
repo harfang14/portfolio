@@ -9,9 +9,12 @@
     <link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Inria+Serif&display=swap" > 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css%22%3E">-->
     <link rel="stylesheet" href="styles.css">
+   
 </head>
 <body>
+
     <!--Partie Navbar-->
 
 <p id="accueil"></p> <!--Point d'ancrage-->
@@ -40,18 +43,19 @@
             <!--Partie centrale image-->
             <div class="describe">
              
-                <h1> <strong>RAUANA ROUPSARD</strong></h1>
+              
+                <h1><strong>RAUANA ROUPSARD</strong></h1>
                 <p><strong> Développeur Web</strong> </p>
  
             </div>  
-
+<!--
                 <div class="icon">
                     <a href="https://github.com/harfang14?tab=repositories" class="fa fa-github" ></a>
                     <a href="https://www.linkedin.com/in/rauana-roupsard/" class="fa fa-linkedin-square"></a> 
                     <a href="https://twitter.com/Rauana987" class="fa fa-twitter"></a>
 <p id="a_propos"></p> 
 
-                 </div> 
+                 </div> -->
         </div>  
     
     <!--Partie Description avec photo de profil-->
@@ -141,7 +145,7 @@
              <h1>EXPÉRIENCES</h1>
         </div>
 
-    <div class="academy"> <!--Rajouter une vidéo promotionnel du campus -->
+    <div class="academy"> 
        
             <img src="logo_campus.png" >
       
@@ -160,7 +164,7 @@
     
     <div class="THP">
        
-            <img src="thp_logo.png" > <!--Idem que pour Campus Academy vidéo et ou lien -->
+            <img src="thp_logo.png" > 
       
                 <div class="thp_texte">
                     <div class="thp_enfant_texte">
@@ -188,10 +192,10 @@
 
     <div class="sites">
         <div class="site_campus">
-            <a href="https://www.campus.academy/">Pour découvrir Campus Academy</a>
+            <a href="https://www.campus.academy/">Pour découvrir <span>Campus Academy</span> </a>
         </div>
         <div class="site_thp">
-            <a href=" ">Pour découvrir The Hacking Project</a>
+            <a href=" ">Pour découvrir <span>The Hacking Project</span></a>
         </div>
     </div>
 
@@ -236,24 +240,25 @@
 
  <p id="contact"></p>
 
+
     <form action="/ma-page-de-traitement" method="post">
 
-        <div>
-            <label for="name">Nom :</label>
-            <input type="text" id="name" name="user_name">
-        </div>
-
-        <div>
-            <label for="mail">e-mail :</label>
-            <input type="email" id="mail" name="user_mail">
-        </div>
-
-        <div>
-            <label for="msg">Message :</label>
-            <textarea id="msg" name="user_message"></textarea>
-        </div>
-        
     </form>
+
+
+    <div class="container">
+        <label for="nom">Nom</label><br>
+        <input id="nom" type="text" class="form-control">
+        
+        <label for="email">Email</label><br>
+        <input id="email" type="text" class="form-control">
+
+                
+        <label for="message">Message</label><br>
+        <textarea id="message" class="form-control" style="min-height: 300px">
+
+        </textarea>        
+    </div>
 
         <div class="button_send">
              <a button type="button" class="btn btn-outline-secondary" href="" >Envoyer</button></a>
@@ -261,22 +266,34 @@
 
     
             <div class="text_consentement"><input type="checkbox" >
-               
-                <p>J'autorise ce site à conserver mes donneés personnelles transmises via ce formulaire.<br> Aucune exploitation commerciale ne sera faite des données conservées.<br> 
+               <p>J'autorise ce site à conserver mes donneés personnelles transmises via ce formulaire.<br> Aucune exploitation commerciale ne sera faite des données conservées.<br> 
                 Voir notre politique de gestion des données personnelles.</p>
             </div>
 
-
     <!--Partie Footer ajouter les icônes de réseaux-->
-    <div class="footer">
-      
-        <p><i class='far fa-copyright' style='font-size:14px'></i> 2020 All rights reserved | Rauana Roupsard | </p>
-        <!-- <div class="icon2">
+
+    <footer class="footer">
+       
+        
+      <div class="all">
+          
             <a href="https://github.com/harfang14?tab=repositories" class="fa fa-github" ></a>
             <a href="https://www.linkedin.com/in/rauana-roupsard/" class="fa fa-linkedin-square"></a> 
             <a href="https://twitter.com/Rauana987" class="fa fa-twitter"></a>
-        </div>    -->
-    </div>
+    </div>  
+        
+        <a id="backtotop" href="#" class="sr-button sr-button4 mini-button sr-buttonicon"><i class="fa fa-chevron-up"></i></a>
+         <div class="logo_footer">
+             <img src="logo.png">
+         </div>
+
+         <div id="copyright">
+            <p><i class='far fa-copyright' style='font-size:14px'></i> 2020 Tous droits réservés | Rauana Roupsard | Mentions légales </p>
+         </div>
+         
+    </footer>
+   
+
 
  
 </body>
