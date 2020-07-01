@@ -4,14 +4,12 @@
     height: 3000px;
   }
 
-/* PARTIE HEADER AVEC LA NAVBAR ET SES FONCTIONNALITÉS*/
-
   #menu-nav {
     display: flex;
     z-index: 1; 
     position: fixed; 
     top: 0;
-    height: 100px; /*navbar plus large*/
+    height: 100px; 
     width: 100%; 
     background-color: #191E2A;
   }
@@ -20,8 +18,6 @@
     flex: ;
     margin-left: 20px;
   }
-
-/****PERSONNALISATION DES ICÔNES DROITE*******/
 
   #icon-right {
     flex: 1;
@@ -66,20 +62,16 @@
   }
 
   li { list-style: none;  }
-    
-/****************IMAGE DE FOND*******************/ 
-
+   
   .img_fd {
     position: relative; 
-    height: 570px; /*image de fond plus grande*/
-    background-image: url('41.png'); 
+    height: 570px; 
+    background-image: url('../pictures/picture_background.png'); 
     background-repeat: no-repeat;
     background-size: cover;
-    filter:grayscale(50%); /*met un filtre gris sur la photo */
+    filter:grayscale(50%); 
     
   }
-
-/***************NOM PRÉNOM ET DEV******************/
 
   .describe {
     position: absolute;
@@ -113,8 +105,6 @@
  
   .describe>p:hover { transform: scale(1.50); }
 
-/****************ICÔNE RÉSEAU**********************/ 
-
   .icon{
     text-align: center;
     padding-top: 17%;
@@ -128,15 +118,11 @@
     color:#b4f3f5; 
   }
 
-/*********PHOTO DE BELLE GOSSE*******************/ 
-
   .img_id {
     display: flex; 
     margin-top: 5%;
  
   }
-
-/****DISPOSITION ET PARAMÈTRE DU TEXTE BIO*****/
 
   .describe_me {
    
@@ -146,8 +132,6 @@
     position: relative;
     height: 550px;
   }
-
-/*********CONTENU DU TEXTE BIOGRAPHIQUE*******/ 
 
   .txt_describe {
     position: relative;
@@ -173,16 +157,12 @@
   margin-left: 12%;
   font-size:22px;
   }
-  
-/************BOUTON CV*******************/
 
   .cv {
     margin-left: 7%;
     margin-top: 21;
     text-decoration: none;
   }
-
-/******************skill1*******************/
 
   .bloc_skill {
     width: 80%;
@@ -217,8 +197,6 @@
 
   .skill3 p+p { color: #42c2c7;}
  
-/*********************SKILL2********************/
-
   .bloc_skill2{
     width: 80%;
     margin: auto;
@@ -276,8 +254,6 @@
 
   .skill6 p+p {color: #42c2c7;}
 
-/******************EXPÉRIENCES*****************/ 
-
 .academy {
   height: 500px;
   width: 100%;
@@ -314,10 +290,6 @@ top: 50%;
 transform: translateY(-50%);
 }
 
-
-
-/*******THP*********/
-
 .THP {
   height: 500px;
   width: 100%;
@@ -340,22 +312,6 @@ transform: translateY(-50%);
   top: 59%;
   transform: translateY(-50%)
 }
-
-/********YOUTUBE***********/
-.test_videos {
-  display: flex;
-  margin-top: 10%;
-}
-
-.video_campus {
-   margin-left: 10%;
-   flex: 1;
-
-}.video_thp {
-  flex: 1;
-  margin-left: 10%;
-}
-/*********SITES***********/
 
 .sites {
   display: flex;
@@ -383,8 +339,6 @@ transform: translateY(-50%);
 }
 
 .site_thp span:hover {  color: #bbff9c;}
-
-/******************RECOMMANDATAION*****************/
 
   .recommandation{
     width: 80%;
@@ -415,7 +369,6 @@ transform: translateY(-50%);
   color: white;
 }
 
-/****************CONTACT*************************/
   .contact {
   text-align: center;
   color:white; 
@@ -429,7 +382,6 @@ transform: translateY(-50%);
   margin-top: 5%;
   width: 400px;
   padding: 1em;
-  /*border: 1px solid #CCC;*/
   border-radius: 1em;
   margin-left: 40%;
   bottom: 40;
@@ -472,7 +424,6 @@ textarea {
 }
 
 .text_consentement {
- /* background-color: bisque;*/
   margin-top: 2%;
   text-align: center;
   color: azure;
@@ -488,8 +439,6 @@ textarea {
     background-color: lightblue;
   }
 }*/
-
-/******************FOOTER************************/
 
 .footer{
   bottom: 0;
