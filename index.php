@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300">
     <link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Inria+Serif&display=swap" > 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./Asset/bootstrap/bootstrap-4.4.1-dist/css/bootstrap.min.css" integnrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Asset/bootstrap/bootstrap-4.4.1-dist/css/bootstrap.min.css" integnrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="./Asset/css/styles.css">
     <link rel="stylesheet" href="./Asset/javascript/style.js">
 
@@ -60,10 +61,9 @@
         </div>
 
     </div>
+
     <div class="cv">
-        <div class="cv">
-            <a button type="button" class="btn btn-outline-secondary" href="./Asset/pdf/cv_RauanaRoupsard.pdf" download="cv_roupsard.pdf">Télécharger mon CV</button></a>
-        </div>
+        <a button type="button" class="btn btn-outline-secondary" href="./Asset/pdf/cv_RauanaRoupsard.pdf" download="cv_roupsard.pdf">Télécharger mon CV</button></a>
     </div>
 
     <p id="competences"></p>
@@ -71,8 +71,7 @@
     <div class="bloc_skill"> 
     
         <h1>MES COMPÉTENCES</h1>
-        
-        
+
         <div class="bloc_icon_skill">
 
             <div class="skill1">
