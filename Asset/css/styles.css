@@ -1,8 +1,9 @@
   body {
-    background-color: #ccd3e2;
+   /* background-color: #ccd3e2;*/
     font-family:'Inria Serif', serif;
     height: 100%;
     width: 100%;
+    background-color:#30374A ;
   }
 
   #menu-nav {
@@ -251,7 +252,7 @@
 
 
  .exp_bloc {
-   background-color: rgb(97, 2, 26);
+ /*  background-color: rgb(97, 2, 26);*/
  } 
  
  .exp_title { 
@@ -327,7 +328,7 @@ transform: translateY(-50%);
   }
 
 .bloc_form{
-background-color: rgb(85, 90, 80);
+/*background-color: rgb(85, 90, 80);*/
 }
 
 .contact {
@@ -388,7 +389,8 @@ textarea {
   margin-top: 2%;
   text-align: center;
   color: azure;
-  margin-top: 4%;
+
+
 }
 
 
@@ -406,7 +408,7 @@ textarea {
   justify-content: center;
   padding: 5px;
   color: #fff;
-  height: 7%;
+  height: 10%;
   background-color: #30374A;
   position: relative;
   margin-top: 10%;
@@ -415,6 +417,7 @@ textarea {
 .all {
   display: flex;
   justify-content: center;
+  
 }
 
 .all a
@@ -423,6 +426,7 @@ textarea {
   padding: 10px;
   text-decoration: none; 
   color: #42c2c7;
+
 }
 #backtotop
 {
@@ -431,7 +435,7 @@ textarea {
   right: 10px;
   font-size: 30px;
   color: white;
-  margin-bottom: 8%;
+  margin-bottom: 3%;
   color: #bbff9c;
   
 }
@@ -453,8 +457,11 @@ textarea {
 .logo_footer
 {
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 10px;
+  height: 100px;
+  /* width: 450px; */
   text-align: center;
+ 
 }
 
 .logo_footer img {
