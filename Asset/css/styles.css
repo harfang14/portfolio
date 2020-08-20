@@ -250,7 +250,9 @@
 
   .skill8 {flex: 1;}
 
-
+.stage a{
+  margin-top:5% ;
+}
  .exp_bloc {
  /*  background-color: rgb(97, 2, 26);*/
  } 
@@ -278,31 +280,33 @@
   margin-left: 1%;
   margin-top: 5%;
   margin-right: 4%;
-  /*background-color: yellowgreen;*/
+  /* background-color: yellowgreen; */
 }
 
 .main_block_in {
 flex: 1;
 display: inline;
 top: 50%;
-/*background-color: purple;*/
+/* background-color: purple; */
+
 /*margin-left: 10%;*/
 
 }
 
 .videolink {
 
-  /*background-color: #bbff9c;*/
+  /* background-color: #bbff9c; */
   margin-left: 55%;
   margin-top: 10%;
 }
 
 .main_block_text {
 position: absolute;
-margin-left: 15%;
+text-align: justify;
+margin-left: 10%;
 top: 50%;
 transform: translateY(-50%);
-/*background-color: #2e3b3b;*/
+/* background-color: #2e3b3b; */
 }
 
 .main_block_text a{
